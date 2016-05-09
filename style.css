@@ -1,7 +1,6 @@
 body {
 	font-family: "Open Sans", sans-serif;
-	font-size: 100%;
-	background-color: #fff;
+	background-color: #003F30;
 	}
 	
 a {
@@ -23,21 +22,21 @@ a:hover.login {
 }
 
 .movie-container {
-	background-color: #003F30;
+	background-color: #007F61;
 	overflow-x: scroll;
     overflow-y: hidden;
 	white-space: nowrap;
-}
-
-.movie-container img {
-	margin: 0 1.2em 0 1.2em;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
+.movie-container img {
+	margin: 0 1em 0 1em;
+}
+
 .genre {
 	background-color: #007F61;
-	height: 350px;
+	height: 250px;
 	margin-bottom: 15px;
 }
 
@@ -76,6 +75,14 @@ h2 {
 	color: #00CB9C;
 }
 
+.movie {
+	border: solid 5px transparent;
+}
+
+.movie:hover {
+	border: solid 5px #fff;
+}
+
 /* Navigation styles */
 .nav {
 	overflow: hidden;
@@ -102,13 +109,26 @@ h2 {
 	color: #fc6; 
 }
 
+/* Login styles */
+input[type=submit] {
+	margin-top: 5px;
+	margin-left: 115px;
+}
+
 
 /* Basic page styles */
 .page-content {
 	background-color: #003F30;
 }
 
+
 /*
 ::-webkit-scrollbar {
-	color:#e37568;
+	height:10px;
+}
+::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+::webkit-scrollbar-thumb {
+	background-color: #fc6;
 }
