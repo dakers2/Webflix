@@ -1,110 +1,161 @@
 body {
 	font-family: "Open Sans", sans-serif;
-	background-color: #003F30;
+	background-color: #fff;
 	}
+
+p {
+	color: #212121;
+	font-weight: normal;
+}
 	
 a {
 	text-decoration: none;
-	color: #fff;
+	color: #212121;
 }
 a:hover {
-	color: #fff;
+	color: #212121;
+	text-decoration: underline;
 }
 
-a.login {
-	background-color: #00CB9C;
-	border: 2px solid #00CB9C;
-	border-radius: .7em;
-	padding: 4px;
-}
-a:hover.login {
-	padding: 7px;
-}
-
-p {
-	color: #fff;
-	font-weight: normal;
-}
-
-.movie-container {
-	background-color: #007F61;
+#movie-container {
+	background-color: #fff;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	margin-bottom:20px;
+	margin-left: 5%;
+	margin-right: 5%;
 }
-
-.movie-container img {
+#movie-container img {
 	margin: 0 1em 0 1em;
 }
+#movie-container h2 {
+	margin-left: .9em;
+}
 
-.genre {
-	background-color: #007F61;
-	height: 250px;
+#genre {
+	height: 200px;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-bottom: 15px;
 }
-
-.columns {
-	width: 150px;
-	float: left;
-	margin-left: 1%;
+#genre h2 {
+	margin-left: .9em;
+}
+#genre a:hover{
+	color: #009688;
+	text-transform: uppercase;
 }
 
-.genre a:hover{
-	font-size: 1.2em;
-	color: #00CB9C;
+.column {
+	width: 150px;
+	float: left;
+	margin-left: 1.5em;
+}
+.column a {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+#top {
+	background-color: #009688;
+	height: 80px;
+}
+#top img {
+	height: 70px;
+	width: 70px;
+	float: left;
 }
 
 header {
-	height: 20px;
-	color: #00CB9C;
+	color: #fff;
 }
-
-.login {
-	float: right;
-	margin-right: 2%;
-}
-
 header h1 {
 	float: left;
+	margin-top: .85em;
 }
-
 h2 {
-	color: #00CB9C;
+	color: #009688;
 }
 
 .movie {
 	border: solid 5px transparent;
 }
-
 .movie:hover {
-	border: solid 5px #fff;
+	border: solid 5px #009688;
 }
+
+
+#footer {
+	height: 20px;
+	background-color: #009688;
+	position: absolute;
+	bottom:0; 
+	width:100%;
+	left: 0;
+	clear: both;
+}
+
 
 /* Navigation styles */
-.nav {
+.#nav {
 	overflow: hidden;
 	width: 100%;
-	background-color: #003F30;
 }
-.nav ul {
+#nav ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0 auto;
 }
-.nav ul li{
+#nav ul li{
 	float: left;
 	margin: 0px 10px 0 10px;
 }
-.nav ul li a {
+#nav ul li a {
 	display: block;
 	padding: .5em;
 	margin: .25em;
 	text-decoration: none;
 }
-.nav ul a:hover {
-	color: #fc6; 
+#nav ul a:hover {
+	text-decoration: underline; 
+}
+#navframe {
+	height: 120px;
+}
+
+
+/* Movie page styles */
+img.movieInfo {
+	padding: 10px;
+	margin-left: 1em;
+	float: left;
+	clear: left;
+}
+.description a {
+	color: #727272;
+}
+p.description a:hover {
+	text-decoration: underline;
+}
+
+
+/* Movie Page Styles */
+#movie-page-content {
+	margin-left: 5%;
+	margin-right: 5%;
+	min-height: 100%;
+}
+p.plot{
+	float: left;
+	padding-top: 1em;
+	width: 500px;
+}
+p.credits {
+	float: left;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	width: 500px;
 }
 
 
@@ -113,11 +164,75 @@ input[type=submit] {
 	margin-top: 5px;
 	margin-left: 115px;
 }
+label {
+	color: #212121;
+}
+a.login {
+	background-color: #fff;
+	border: 2px solid #fff;
+	border-radius: .7em;
+	padding: 6px;
+	margin-top: 1em;
+}
+a:hover.login {
+	text-decoration: underline;
+}
+.login {
+	float: right;
+	margin-right: 2%;
+}
+
+
+/* Button styles */
+a.button {
+	background-color: #b2dfdb;
+	border: 2px solid transparent;
+	border-radius: .7em;
+	padding: 10px;
+	clear: both;
+}
+a:hover.button {
+	text-decoration: underline;
+}
+
+
+/* Checkout page styles */
+span.required {
+	color: red;
+	font-size: x-small;
+	vertical-align:super;
+}
+
+.ValidateMsg {
+	color: red;
+	font-size: x-small;
+	display: none;
+}
 
 
 /* Basic page styles */
-.page-content {
-	background-color: #003F30;
+#basic-content {
+	margin-left: 5%;
+	margin-right: 5%;
+	min-height: 100%;
+}
+#page-content {
+	background-color: #fff;
+}
+
+
+/* clearing div */
+.clear {
+	clear: both;
+}
+.clear-left {
+	clear: left;
+}
+
+/* Remove white space around page */
+* {
+	margin: 0;
+	padding: 0;
 }
 
 /*
