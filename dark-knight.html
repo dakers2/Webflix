@@ -3,37 +3,37 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Webflix</title>
-	<link href="style.css" rel='stylesheet' type='text/css'>
+	<link href="../style.css" rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	<header>
-		<h1>Webflix</h1>
-		<p><a class="login" href="login.hmtl">LOGIN</a></p>
-	</header>
-	
-	<div class="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="featured.html">Featured</a></li>
-			<li><a href="genres.html">Genres</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="cart.html">Cart</a></li>
-		</ul>
+<div id="page-content">
+
+	<div id="navframe">
+	<iframe style="width: 100%;" src="../nav.html" frameborder="0"></iframe>
 	</div>
 	
-	<div class="page-content">
+	<div class="clear"></div>
+	
+	<div id="movie-page-content">
 		<h2>The Dark Knight (2008)</h2>
-		<p class="description">PG-13 | 2h 32min | <a href="#">Action</a>, <a href="#">Drama</a> | 18 July 2008 (USA)</p>
+		<p class="description">PG-13 | 2h 32min | <a href="../genres/action.html">Action</a>, <a href="../genres/drama.html">Drama</a> | 18 July 2008 (USA)</p>
+		<img class="movieInfo" src="../images/dark-knight.jpg">
 
 		<p class="plot">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.</p>
 		
-		<p>
+		<p class="credits">
 			<strong>Director:</strong> Christopher Nolan<br>
 			<strong>Writers:</strong> Jonathan Nolan (screenplay), Christopher Nolan (screenplay) <br>
 			<strong>Stars:</strong> Christian Bale, Heath Ledger, Aaron Eckhart
 		</p>
 	</div>
 	
+	<div class="clear"></div>
+	
+	<div id="footer"></div>
+		
+</div> <!-- /page-content -->
+
 </body>
 </html>

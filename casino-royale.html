@@ -3,37 +3,38 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Webflix</title>
-	<link href="style.css" rel='stylesheet' type='text/css'>
+	<link href="../style.css" rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	<header>
-		<h1>Webflix</h1>
-		<p><a class="login" href="login.hmtl">LOGIN</a></p>
-	</header>
-	
-	<div class="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="featured.html">Featured</a></li>
-			<li><a href="genres.html">Genres</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="cart.html">Cart</a></li>
-		</ul>
+<div id="page-content">
+
+	<div id="navframe">
+	<iframe style="width: 100%;" src="../nav.html" frameborder="0"></iframe>
 	</div>
 	
-	<div class="page-content">
+	<div class="clear"></div>
+	
+	<div id="movie-page-content">
 		<h2>Casino Royale (2006)</h2>
-		<p class="description">PG-13 | 2h 24min | <a href="#">Action</a>, <a href="#">Adventure</a>, <a href="#">Thriller</a> | 17 November 2006 (USA)</p>
+		<p class="description">PG-13 | 2h 24min | <a href="../genres/action.html">Action</a>, <a href="../genres/adventure.html">Adventure</a>, <a href="../genres/thriller.html">Thriller</a> | 17 November 2006 (USA)</p>
+		<img class="movieInfo" src="../images/casino-royale.jpg">
+
 
 		<p class="plot">Armed with a licence to kill, Secret Agent James Bond sets out on his first mission as 007 and must defeat a weapons dealer in a high stakes game of poker at Casino Royale, but things are not what they seem.</p>
 		
-		<p>
+		<p class="credits">
 			<strong>Director:</strong> Martin Campbell<br>
 			<strong>Writers:</strong> Neal Purvis (screenplay), Robert Wade (screenplay)<br>
 			<strong>Stars:</strong> Daniel Craig, Eva Green, Judi Dench
 		</p>
 	</div>
 	
+	<div class="clear"></div>
+	
+	<div id="footer"></div>
+		
+</div> <!-- /page-content -->
+
 </body>
 </html>

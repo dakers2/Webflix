@@ -3,37 +3,37 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Webflix</title>
-	<link href="style.css" rel='stylesheet' type='text/css'>
+	<link href="../style.css" rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	<header>
-		<h1>Webflix</h1>
-		<p><a class="login" href="login.hmtl">LOGIN</a></p>
-	</header>
-	
-	<div class="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="featured.html">Featured</a></li>
-			<li><a href="genres.html">Genres</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="cart.html">Cart</a></li>
-		</ul>
+<div id="page-content">
+
+	<div id="navframe">
+	<iframe style="width: 100%;" src="../nav.html" frameborder="0"></iframe>
 	</div>
 	
-	<div class="page-content">
+	<div class="clear"></div>
+	
+	<div id="movie-page-content">
 		<h2>Jurassic Park (1993)</h2>
-		<p class="description">PG-13 | 2h 7min | <a href="#">Adventure</a>, <a href="#">Sci-Fi</a>, <a href="#">Thriller</a> | 11 June 1993 (USA)</p>
+		<p class="description">PG-13 | 2h 7min | <a href="../genres/adventure.html">Adventure</a>, <a href="../genres/sci-fi.html">Sci-Fi</a>, <a href="../genres/thriller.html">Thriller</a> | 11 June 1993 (USA)</p>
+		<img class="movieInfo" src="../images/jurassic-park.jpg">
 
 		<p class="plot">During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.</p>
 		
-		<p>
+		<p class="credits">
 			<strong>Director:</strong> Steven Spielberg<br>
 			<strong>Writers:</strong> Michael Crichton (novel), Michael Crichton (screenplay)<br>
 			<strong>Stars:</strong> Sam Neill, Laura Dern, Jeff Goldblum
 		</p>
 	</div>
 	
+	<div class="clear"></div>
+	
+	<div id="footer"></div>
+		
+</div> <!-- /page-content -->
+
 </body>
 </html>
